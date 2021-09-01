@@ -6,28 +6,57 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="120dp"
+    <TextView
+        android:id="@+id/powered_by_txt"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/cc_splash"
+        android:layout_marginTop="80dp" />
+    
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mentorboxx"
         tools:ignore="ContentDescription" />
 
+    <TextView
+        android:id="@+id/mentorboxx_txt"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:id="@+id/student_txt"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2876EB"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="220dp" />
+    
     <TextView
         android:id="@+id/user_name_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
         android:ellipsize="end"
         android:lines="1"
         android:padding="8dp"
         android:textColor="@android:color/black"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:layout_marginTop="340dp"
         tools:text="User Name" />
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/call_type_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,13 +66,13 @@
         android:padding="8dp"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="24sp"
-        tools:text="Incoming audio call" />
+        tools:text="Incoming audio call" /> -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="100dp"
         android:gravity="center_horizontal">
 
         <ImageView

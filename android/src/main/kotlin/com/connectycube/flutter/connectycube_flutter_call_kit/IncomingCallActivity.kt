@@ -122,10 +122,19 @@ class IncomingCallActivity : Activity() {
         val callTitleTxt: TextView =
             findViewById(resources.getIdentifier("user_name_txt", "id", packageName))
         callTitleTxt.text = callInitiatorName
-        val callSubTitleTxt: TextView =
-            findViewById(resources.getIdentifier("call_type_txt", "id", packageName))
-        callSubTitleTxt.text =
-            String.format(CALL_TYPE_PLACEHOLDER, if (callType == 1) "Video" else "Audio")
+        // val callSubTitleTxt: TextView =
+        //     findViewById(resources.getIdentifier("call_type_txt", "id", packageName))
+        // callSubTitleTxt.text =
+        //     String.format(CALL_TYPE_PLACEHOLDER, if (callType == 1) "Video" else "Audio")
+        val poweredByTxt: TextView = 
+            findViewById(resources.getIdentifier("powered_by_txt", "id", packageName))
+        poweredByTxt.text = "Powered by"
+        val mentorboxxTxt: TextView = 
+            findViewById(resources.getIdentifier("mentorboxx_txt", "id", packageName))
+        mentorboxxTxt.text = "MentorBoxx"
+        val studentTxt: TextView = 
+            findViewById(resources.getIdentifier("student_txt", "id", packageName))
+        studentTxt.text = "A student is looking for guidance"
     }
 
     // calls from layout file
