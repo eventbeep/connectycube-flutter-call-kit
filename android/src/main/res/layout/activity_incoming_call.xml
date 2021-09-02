@@ -51,7 +51,7 @@
         android:lines="1"
         android:padding="8dp"
         android:textColor="@android:color/black"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="340dp"
         tools:text="User Name" />
